@@ -34,6 +34,7 @@
 API Testing Steps Using Postman
 
 1. User Registration
+https://tracker-expense-cyfn.onrender.com/api/auth/register
 Endpoint: POST /api/auth/register
 Description: Register a new user.
 Request Body:
@@ -54,6 +55,7 @@ json
 }
 
 2. User Login
+https://tracker-expense-cyfn.onrender.com/api/auth/login
 Endpoint: POST /api/auth/login
 Description: Login a user.
 Request Body:
@@ -74,6 +76,7 @@ json
 Note: Copy the token value. You will use this token for authorization in the next requests.
 
 4. Add a New Transaction
+https://tracker-expense-cyfn.onrender.com/api/transactions
 Endpoint: POST /api/transactions
 Description: Add a new transaction for the authenticated user.
 Authorization: Select "Bearer Token" in Postman and paste the token from the login response.
@@ -101,6 +104,7 @@ json
 }
 
 4. Get All Transactions
+https://tracker-expense-cyfn.onrender.com/api/transactions
 Endpoint: GET /api/transactions
 Description: Retrieve all transactions for the authenticated user.
 Authorization: Select "Bearer Token" and use the token from the login response.
@@ -119,7 +123,8 @@ json
   }
 ]
 
-5. Get Transaction by ID
+6. Get Transaction by ID
+https://tracker-expense-cyfn.onrender.com/api/transactions/:id
 Endpoint: GET /api/transactions/:id
 Description: Retrieve a transaction by its ID.
 Authorization: Select "Bearer Token" and use the token from the login response.
@@ -137,7 +142,8 @@ json
   "__v": 0
 }
 
-6. Update Transaction by ID
+8. Update Transaction by ID
+https://tracker-expense-cyfn.onrender.com/api/transactions/:id
 Endpoint: PUT /api/transactions/:id
 Description: Update a specific transaction.
 Authorization: Select "Bearer Token" and use the token from the login response.
@@ -166,6 +172,7 @@ json
 }
 
 7. Delete Transaction by ID
+https://tracker-expense-cyfn.onrender.com/transactions/:id
 Endpoint: DELETE /api/transactions/:id
 Description: Delete a specific transaction.
 Authorization: Select "Bearer Token" and use the token from the login response.
